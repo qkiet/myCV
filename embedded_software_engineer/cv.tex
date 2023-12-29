@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah 
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Phạm Quang Kiệt} % Your name
+\jobtitle {Embedded software engineer}
+\address{} % Your address
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+84) 933802542 | qkiet97@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Summary}
+A senior developer with the love of learning and great wealth of knowledge and experience. With \textbf{3.54+ year} of continuously learning adapt to new technologies and solve new problem, I'm confident that I can provide valuable servicecontribution to corporationsteams and corporations.
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Work Experience}
+\begin{rSubsection}
+    {Banvien Corporation} 
+    {07/2022 - 12/2023 (1.5 year)} 
+    {Senior Embedded Engineer} 
+    {}
+
+\end{rSubsection}
+\begin{rSubsection}
+    {XelexBanvien Corporation} 
+    {017/20212 - 0612/2022 (1.5 year)3} 
+    {FirmwareSenior Embedded Engineer} 
+    {}
+\begin{itemize}
+     \item Coordinate with hardware team for \textbf{schematic revision and recommendation} to make sure defined features are functional
+     \item \textbf{Develop, monitor and adjust firmware development plan} to make sure projects meet its deadline 
+     \item \textbf{Manage project documentation database} to make sure documentation database is easy to navigate and new recruits can understand project structure
+     \item Customize \textbf{MEC1428 (a M14K core MCU)} source code to aid CPU power sequence and control \& monitor platform's hardware
+     \item \textbf{Customize BIOS}, which uses {\bf Slim bootloader} framework, to make sure platform is functional as expected. Customization include \textbf{reconfigure GPIO}, \textbf{configure SoC supported features} and customize \textbf{ACPI firmware} (to make sure Windows driver recognize and configure hardware)
+     \item Debug prototypes using following methods: \textbf{logs} produced from BIOS; probing \textbf{power \& data signals} using \textit{multimeter, oscilloscope and logic analyzer}; using \textbf{Windows tools} to inspect hardware communication
+     \item \textbf{Work closely with suppliers} for firmware support and request additional tools \& documents
+     
+\end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}
+    {Xelex Corporation} 
+    {03/2020 - 12/2020 (9 months)} 
+    {Firmware Engineer Intern} 
+    {}
+\begin{itemize}
+     \item Define {\bf microarchitecture-based firmware architecture, inter-thread communication flow, data flow, security protocol} to accommodate complex system features
+     \item \textbf{Define customized communication \& security protocol} between multiple IoT devices and IoT device with management software in host computer base on \textbf{HTTP} to facilitate secured data-and-control transmission
+     \item Develop features defined in architectures. MCU is {\bf ARM-based STM32F407}, develop with {\bf STM32CubeIDE}, then migrated to {\bf Visual Code + Cmake} to incorporate {\bf Git} in develop environment and ease develop flow. Embedded OS is {\bf FreeRTOS} (a  {\bf RTOS MIT-licensed implementation} which suitable for corporation project)
+     \item {\bf Assign, monitor tasks and guide} team members to have team member meet project's technical knowledge and make sure team effort is aligned with the project.
+     
+\end{itemize}
+\end{rSubsection}
+
+
+
+
+\end{rSection}
+\begin{rSection}{Education}
+
+{\bf University of Technology Ho Chi Minh City} \hfill {\em 08/2015 - 2021} 
+\\ Electronics - Telecommunications Engineering\hfill { GPA: 7.33/10 }
+
+
+\textbf{\textit{Thesis:}} Develop a new \textbf{lightweight security protocol} that used for communication between Power Distribution Unit (PDU) and computer software. This security protocol features:
+\begin{itemize}
+    \item Encrypted transmitted messages with \textbf{non-repeat encrypt key}. Encrypt algorithm using \textbf{AES-CTR-128 for utilizing parallel computation}, thus reduce computation time.
+    \item Detect unauthorized modification of incoming messages using \textbf{Hash-based Message Authentication Code (HMAC)}.
+    \item \textbf{Customized encrypt key exchange protocol} features 3-way handshake key exchange and emergency procedure to restore encrypt key for both sides in case of corrupted message.
+\end{itemize}
+Implementation of this protocol including utilizing \textbf{lwIP + FreeRTOS} on PDU's firmware and \textbf{Visual C++} on computer host software.\\
+Target device firmware source code: \href{https://github.com/qkiet/Test_Security_System}{https://github.com/qkiet/Test\_Security\_System}\\
+Host computer software source code:
+\href{https://github.com/qkiet/Demo_Monitor_Control}{https://github.com/qkiet/Demo\_Monitor\_Control}\
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection}
+% \begin{rSection}{Academic Projects}
+% {\bf Smart Alarm controlled by BLE}\hfill {\em 12/2018}
+% \begin{itemize}
+%     \item Design a system that alarm when detect vibration
+%     \item Using a Bluetooth Low Energy to setup device operation mode
+%     \item \textbf{Roles:} Program the microcontroller to detect vibration and setup operation mode with BLE message
+%     \item \textbf{Result:} Scored by instructor: \textbf{9.0/10}
+
+% \end{itemize}
+
+% {\bf Traffic sign recognition by video}\hfill {\em 05/2019}
+% \begin{itemize}
+%     \item Design an algorithm to detect traffic signs in video and recognize the name of the traffic signs
+%     \item \textbf{Roles:} Tuning detection algorithm's setting and extract features from detected Region of Interest that contain traffic signs
+%     \item \textbf{Result:} Scored by instructor: \textbf{8.5/10}
+
+    
+% \end{itemize}
+
+% {\bf Measure heart rate by capture your face using camera }\hfill {\em 12/2019}
+% \begin{itemize}
+%     \item Design an algorithm that measure instantaneous heart rate by utilizing a video that capture human face
+%     \item \textbf{Roles:} Project leader, rewrite heart rate measurement algorithm from referenced sources, program some miscellaneous features to speedup testing and visualizing signals. Organize tasks for team member to finish final reports
+%     \item \textbf{Result} Scored by instructor: \textbf{9.0/10}
+
+% \end{itemize}
+% {\bf Collect shrimp pond's parameters and transmit by LoRa technology}\hfill {\em 01/2020}
+% \begin{itemize}
+%     \item Design a system with two modules: the transmitter collects shrimp pond's parameters like temperature, pH... then transmit parameters to receiver by LoRa module; the receiver receives those parameters then upload to Thingspeak.
+%     \item Project contains an Android application to oversee shrimp pond's parameters by download data from Thingspeak
+%     \item \textbf{Roles:} Program microcontrollers in transmitter and receiver, program Android application, design circuit layout and soldier circuit.
+%     \item \textbf{Result} Scored by instructor: \textbf{9.5/10}
+% \end{itemize}
+
+% \end{rSection}
+
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	KEY SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Key Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Languages & C, C++, Java, Kotlin, C\#, Python \\
+Technologies & RTOS, EDK II, ACPI
+% Integrated Development Environment & Visual Studio, Arduino IDE \\
+% Circuit Development Tools & Proteus, Advanced Design System\\ 
+\end{tabular}
+
+\end{rSection}
+\begin{rSection}{Language} \itemsep -3pt
+\item TOEIC \textbf{915/990}
+%\item Trained and disciplined in National Cadet Corps (NCC), IIT Kanpur for a year.
+ %\item  Participated in Vijyoshi Camp 2012 organized at Indian Institute of Science, Bangalore.
+ %\item Won 2nd position in Kho-Kho in Intramurals conducted by Physical Education Section, IIT Kanpur.
+ %\item Pursued French as second language during secondary school from Grade 6 to Grade 10. Also participated in French Song Competition and French G.K. Quiz in Class 10th. %
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\end{document}
