@@ -142,12 +142,17 @@
 }
 
 \newenvironment{rCompanySubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
+ \begin{large}{\textbf{#1}}\end{large} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   { #3} \hfill {\em #4} % Italic job title and location
   }
   \vspace{0.5em} % Some space after the list of bullet points
+  \\
+}
+
+\newenvironment{rProjectSubsubsection}[2]{ % 2 input arguments - company name, duration
+ \hspace*{1em}Project:\textit{ #1} \hfill {#2} % Bold company name and date on the right
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
