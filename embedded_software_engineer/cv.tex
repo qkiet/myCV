@@ -7,7 +7,7 @@
 % http://www.LaTeXTemplates.com
 %
 % Original author:
-% Rishi Shah 
+% Rishi Shah
 %
 % Important note:
 % This template requires the resume.cls file to be in the same directory as the
@@ -39,7 +39,7 @@
 %	SUMMARY SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Summary}
-A senior developer with the love of learning and great wealth of knowledge and experience. With \textbf{3.54+ year} of continuously learning adapt to new technologies and solve new problem, I'm confident that I can provide valuable servicecontribution to corporationsteams and corporations.
+A senior developer with the love of learning and great wealth of knowledge and experience. With \textbf{4+ year} of continuously learning adapt to new technologies and solve new problem, I'm confident that I can provide valuable servicecontribution to corporationsteams and corporations.
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
@@ -48,54 +48,90 @@ A senior developer with the love of learning and great wealth of knowledge and e
 
 \begin{rSection}{Work Experience}
     \begin{rCompanySubsection}
-        {Ban Vien Corporation} 
-        {07/2022 - 12/2023 (1.5 year)} 
-        {Senior Embedded Engineer} 
+        {Ban Vien Corporation}
+        {07/2022 - 12/2023 (1.5 year)}
+        {Senior Embedded Engineer}
         {}
-        \begin{rProjectSubsubsection}{Linux Kernel BSP}{08/2022 - 03/2022 (5 months)}
+        \begin{rProjectSubsubsection}{In-vehicle Infotainment}{12/2023 - now}
             \begin{itemize}
-                \setlength{\itemindent}{1.25em}
-                \item Support team to handle various tickets from clients
-                \item Noted
+                \item Develop Android App to stream videos produced by ADAS ECU to head Unit
+                \item Customize various component in Android Open Source Project (AOSP) to support additional features like:
             \end{itemize}
+            \hspace*{2.5em}Technologies: \textbf{Gradle, Jetpack Media3, Jetpack Compose, Android Platform}
+        \end{rProjectSubsubsection}
+        \begin{rProjectSubsubsection}{ION Mobility}{04/2023 - 11/2023 (8 months)}
+            \begin{itemize}
+                \item Support ION Mobility team to integrate AUTOSAR diagnostic module DEM, DET into ION's ECU codebase
+                \item Develop unique WiFi solution for ION's ECU which does not have built-in WiFi module
+                \item Develop MQTT drivers for ION's ECU to communicate with cloud
+                \item Develop AT command driver in ION's ECU to seamlessly transmit AT command to LTE modem and invoke receive callback
+            \end{itemize}
+            \hspace*{2.5em}Technologies: \textbf{WiFi, LTE, MQTT, AUTOSAR}
         \end{rProjectSubsubsection}
         \begin{rProjectSubsubsection}{Upstream Kernel Verification}{01/2023 - 03/2023 (3 months)}
             \begin{itemize}
                 \setlength{\itemindent}{1.25em}
-                \item Coordinate
-                \item Dou
-        \end{itemize}
+                \item Report changes of maintained drivers from latest version of mainline kernel
+                \item Perform regression test on maintained drivers to make sure they are functional
+                \item Record, attempt to fix and report any failutres of regression test
+            \end{itemize}
+            \hspace*{2.5em}Technologies: \textbf{Linux Device Driver, Test Automation}
+        \end{rProjectSubsubsection}
+        \begin{rProjectSubsubsection}{Advanced Driver-Assistance System}{11/2022 - 12/2022 (2 months)}
+            \begin{itemize}
+                \setlength{\itemindent}{1.25em}
+                \item Create Yocto recipes in order to build Linux disto that:
+                \begin{itemize}
+                    \item Make Wifi dongle works for the distro
+                    \item Make Wifi dongle act like a Wifi access point after system boots
+                    \item Integrate in-house software into the distro
+                \end{itemize}
+            \end{itemize}
+            \hspace*{2.5em}Technologies: \textbf{Yocto, systemd, WiFi, Linux Kernel}
+        \end{rProjectSubsubsection}
+        \begin{rProjectSubsubsection}{Linux Kernel BSP}{08/2022 - 03/2022 (5 months)}
+            \begin{itemize}
+                \setlength{\itemindent}{1.25em}
+                \item Help the team fix Ethernet and PCIe-related bugs in Linux kernel
+                \item Some noteable issues include:
+                \begin{itemize}
+                    \item Boards not able to ping even physical connection is established
+                    \item PCIe only works with one host
+                    \item PCIe not able to transfer at full speed
+                \end{itemize}
+            \end{itemize}
+            \hspace*{2.5em}Technologies: \textbf{PCIe, Ethernet, DMA, Linux Device Driver}
         \end{rProjectSubsubsection}
     \end{rCompanySubsection}
 \begin{rCompanySubsection}
-    {XelexBanvien Corporation} 
-    {017/20212 - 0612/2022 (1.5 year)} 
+    {XelexBanvien Corporation}
+    {017/20212 - 0612/2022 (1.5 year)}
     {Firmware Engineer}
     {}
 
 \begin{itemize}
      \item Coordinate with hardware team for \textbf{schematic revision and recommendation} to make sure defined features are functional
-     \item \textbf{Develop, monitor and adjust firmware development plan} to make sure projects meet its deadline 
+     \item \textbf{Develop, monitor and adjust firmware development plan} to make sure projects meet its deadline
      \item \textbf{Manage project documentation database} to make sure documentation database is easy to navigate and new recruits can understand project structure
      \item Customize \textbf{MEC1428 (a M14K core MCU)} source code to aid CPU power sequence and control \& monitor platform's hardware
      \item \textbf{Customize BIOS}, which uses {\bf Slim bootloader} framework, to make sure platform is functional as expected. Customization include \textbf{reconfigure GPIO}, \textbf{configure SoC supported features} and customize \textbf{ACPI firmware} (to make sure Windows driver recognize and configure hardware)
      \item Debug prototypes using following methods: \textbf{logs} produced from BIOS; probing \textbf{power \& data signals} using \textit{multimeter, oscilloscope and logic analyzer}; using \textbf{Windows tools} to inspect hardware communication
      \item \textbf{Work closely with suppliers} for firmware support and request additional tools \& documents
-     
+
 \end{itemize}
 \end{rCompanySubsection}
 
 \begin{rCompanySubsection}
-    {Xelex Corporation} 
-    {03/2020 - 12/2020 (9 months)} 
-    {Firmware Engineer Intern} 
+    {Xelex Corporation}
+    {03/2020 - 12/2020 (9 months)}
+    {Firmware Engineer Intern}
     {}
 \begin{itemize}
      \item Define {\bf microarchitecture-based firmware architecture, inter-thread communication flow, data flow, security protocol} to accommodate complex system features
      \item \textbf{Define customized communication \& security protocol} between multiple IoT devices and IoT device with management software in host computer base on \textbf{HTTP} to facilitate secured data-and-control transmission
      \item Develop features defined in architectures. MCU is {\bf ARM-based STM32F407}, develop with {\bf STM32CubeIDE}, then migrated to {\bf Visual Code + Cmake} to incorporate {\bf Git} in develop environment and ease develop flow. Embedded OS is {\bf FreeRTOS} (a  {\bf RTOS MIT-licensed implementation} which suitable for corporation project)
      \item {\bf Assign, monitor tasks and guide} team members to have team member meet project's technical knowledge and make sure team effort is aligned with the project.
-     
+
 \end{itemize}
 \end{rCompanySubsection}
 
@@ -105,7 +141,7 @@ A senior developer with the love of learning and great wealth of knowledge and e
 \end{rSection}
 \begin{rSection}{Education}
 
-{\bf University of Technology Ho Chi Minh City} \hfill {\em 08/2015 - 2021} 
+{\bf University of Technology Ho Chi Minh City} \hfill {\em 08/2015 - 2021}
 \\ Electronics - Telecommunications Engineering\hfill { GPA: 7.33/10 }
 
 
@@ -141,7 +177,7 @@ Host computer software source code:
 %     \item \textbf{Roles:} Tuning detection algorithm's setting and extract features from detected Region of Interest that contain traffic signs
 %     \item \textbf{Result:} Scored by instructor: \textbf{8.5/10}
 
-    
+
 % \end{itemize}
 
 % {\bf Measure heart rate by capture your face using camera }\hfill {\em 12/2019}
@@ -176,7 +212,7 @@ Host computer software source code:
 Languages & C, C++, Java, Kotlin, C\#, Python \\
 Technologies & RTOS, EDK II, ACPI
 % Integrated Development Environment & Visual Studio, Arduino IDE \\
-% Circuit Development Tools & Proteus, Advanced Design System\\ 
+% Circuit Development Tools & Proteus, Advanced Design System\\
 \end{tabular}
 
 \end{rSection}
