@@ -86,15 +86,23 @@ A senior developer with the love of learning and great wealth of knowledge and e
         }
         \end{rProjectSubsubsectionV2}
 
-        \begin{rProjectSubsubsection}{ION Mobility}{04/2023 - 11/2023 (8 months)}
+        % ION Mobility project
+        \begin{rProjectSubsubsectionV2}{ION Mobility}{04/2023 - 11/2023 (7 months)}{
             \begin{itemize}
-                \item Support ION Mobility team to integrate AUTOSAR diagnostic module DEM, DET into ION's ECU codebase
-                \item Develop unique WiFi solution for ION's ECU which does not have built-in WiFi module
-                \item Develop MQTT drivers for ION's ECU to communicate with cloud
-                \item Develop AT command driver in ION's ECU to seamlessly transmit AT command to LTE modem and invoke receive callback
+                \item Support implementing AUTOSAR various module like DET and DEM
+                \item Develop additional complex driver in order to bring up features like WiFi
             \end{itemize}
-            \hspace*{2.5em}Technologies: \textbf{WiFi, LTE, MQTT, AUTOSAR}
-        \end{rProjectSubsubsection}
+        }{
+            \begin{itemize}
+                \item Fix an buffer overflow bug: sometimes UART data transmitting from one ECU to another is dropped unexpectedly. Turns out the receive handling doing too much processing (like checksum comparision) that leads to data loss. Counter this issue by forwarding UART data directly to a circular queue for later processing.
+                \item Develop a unique WiFi solution for ION's ECU which does not have built-in WiFi module but have external ESP-32 module. This is accomplished by porting ESP Hosted into ECU (a complex device driver CDD) and ESP-32 module. A challenge is: I must find the workaround for mutex because ESP Hosted in MCU side uses a lot of mutex but platform realtime OS OSEK does not support mutex.
+                \item Develop a CDD called Wifi Manager to manage Wi-Fi connection. This driver is implemented by using my own finite state machine implementation and leveraging above Wi-Fi driver.
+                \item Develop a CDD called LTE driver to seamlessly communicate with LTE module to make HTTP request or using built-in MQTT AT command
+                \item Develop a CDD called MQTT driver that manage MQTT connection, get published data and push data. This MQTT driver is designed to be used by multiple transport: by either Wi-Fi or LTE
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
         \begin{rProjectSubsubsection}{Upstream Kernel Verification}{01/2023 - 03/2023 (3 months)}
             \begin{itemize}
                 \setlength{\itemindent}{1.25em}
