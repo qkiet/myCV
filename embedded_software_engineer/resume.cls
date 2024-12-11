@@ -157,6 +157,9 @@
 
 \newenvironment{rProjectSubsubsectionV2}[4]{ % 4 input arguments - project name, timeline, responsibilities, interesting problem solved or proud legacy 
  \hspace*{1em}Project:\textit{ #1} \hfill {#2} % Bold company name and date on the right
+ \vspace{1ex} % Some space after subsubsections
+ \\
+ \hspace*{2.5em}\textbf{Responsibilities:}
  #3
  \hspace*{2.5em}\textbf{Interesting problem solved or proud legacy:}
  #4
