@@ -116,18 +116,18 @@ A senior developer with the love of learning and great wealth of knowledge and e
             \end{itemize}
         }
         \end{rProjectSubsubsectionV2}
-        \begin{rProjectSubsubsection}{Advanced Driver-Assistance System}{11/2022 - 12/2022 (2 months)}
+
+        % BV in-house ADAS
+        \begin{rProjectSubsubsectionV2}{In-house ADAS}{11/2022 - 12/2022 (2 months)} {
             \begin{itemize}
-                \setlength{\itemindent}{1.25em}
-                \item Create Yocto recipes in order to build Linux disto that:
-                \begin{itemize}
-                    \item Make Wifi dongle works for the distro
-                    \item Make Wifi dongle act like a Wifi access point after system boots
-                    \item Integrate in-house software into the distro
-                \end{itemize}
+                \item Support various features for proof-of-concept ADAS platform
             \end{itemize}
-            \hspace*{2.5em}Technologies: \textbf{Yocto, systemd, WiFi, Linux Kernel}
-        \end{rProjectSubsubsection}
+        }{
+            \begin{itemize}
+                \item Integrate Wi-Fi AP service, which ADAS platform serves as a Wi-Fi AP, via a Wi-Fi USB dongle into ADAS platform distros. This problem is more challenge than it is previously thought because I have to make the Wi-Fi dongle works on Linux distros of ADAS platform, investigate how to make a STA mode Wi-Fi dongle into AP mode and make systemd service in Yocto Project
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
         \begin{rProjectSubsubsection}{Linux Kernel BSP}{08/2022 - 03/2022 (5 months)}
             \begin{itemize}
                 \setlength{\itemindent}{1.25em}
