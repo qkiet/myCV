@@ -151,7 +151,7 @@
   \\
 }
 
-\newenvironment{rProjectSubsubsection}[2]{ % 2 input arguments - company name, duration
+\newenvironment{rProjectSubsubsection}[2]{ % 2 input arguments - project name, duration 
  \hspace*{1em}Project:\textit{ #1} \hfill {#2} % Bold company name and date on the right
 }
 
