@@ -52,14 +52,24 @@ A senior developer with the love of learning and great wealth of knowledge and e
         {07/2022 - 12/2023 (1.5 year)}
         {Senior Embedded Engineer}
         {}
-         \begin{rProjectSubsubsection}{Axon contractor}{04/2024 - 12/2024}
+        % Axon BWC project
+        \begin{rProjectSubsubsectionV2}{Axon Body Worn Camera (BWC) contractor}{04/2024 - 12/2024}{
             \begin{itemize}
-                \item Implement end-to-end automation test for Axon's products like Axon Body Worn Camera 3 & 4
+                \item Implement end-to-end automation test for many features of Axon products like Axon Body 3 \& or Axon Body 4
                 \item Improve and expand in-house automation test framework
-                \item Maintain Axon's complex application layer, mostly bug fixing
+                \item Maintain Axon's complex application layer
             \end{itemize}
-            \hspace*{2.5em}Technologies: \textbf{Jenkins, Pytest, Golang, Docker, System V init, systemd}
-        \end{rProjectSubsubsection}
+        }{
+            \begin{itemize}
+                \item Able to fake a RFID scan app in order to perform automation test that use RFID scan app. This problem is solved thanks to browser developer tools, which I am able to extract API and its data
+                \item Add to automation test framework Multi-Authentication Factor (MFA) utility to test MFA feature. This problem is solved thanks to, again, browser developer tools and investigation into how MFA really works
+                \item Add a sub-command that allows developer to capture what text fields and values LCD is currently display. This feature opens new possibility for automation test because automation test now can check the texts on LCD
+                \item Help team move forward by fixing a C++ unit test that weirdly passed in local environment but failed when run in Jenkins environment (spoiler alert: \textit{uninitialized mutex})
+                \item Fix a complex issues that involves a lot of processes and happens ocassionally. This problem is interesting because it teaches me how fragile complex software can be and technique to lessen the chance of causing regression.
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
         \begin{rProjectSubsubsection}{In-vehicle Infotainment}{12/2023 - 03/2024}
             \begin{itemize}
                 \item Develop Android App to stream videos produced by ADAS ECU to head Unit
