@@ -155,6 +155,14 @@
  \hspace*{1em}Project:\textit{ #1} \hfill {#2} % Bold company name and date on the right
 }
 
+\newenvironment{rProjectSubsubsectionV2}[4]{ % 4 input arguments - project name, timeline, responsibilities, interesting problem solved or proud legacy 
+ \hspace*{1em}Project:\textit{ #1} \hfill {#2} % Bold company name and date on the right
+ #3
+ \hspace*{2.5em}\textbf{Interesting problem solved or proud legacy:}
+ #4
+ \vspace{2ex} % Some space after subsubsections
+}
+
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
 \def\namesize{\huge} % Size of the name at the top of the document
 \def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
