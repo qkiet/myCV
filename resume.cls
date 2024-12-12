@@ -138,17 +138,17 @@
 %   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
 %   }{
 %   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
 }
 
-\newenvironment{rCompanySubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
+\newenvironment{rCompanySubsection}[5]{ % 5 input arguments - company name, year(s) employed, job title, location and project subsubsection
  \begin{large}{\textbf{#1}}\end{large} \hfill {#2} % Bold company name and date on the right
  \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
   \\
   { #3} \hfill {\em #4} % Italic job title and location
   }
-  \vspace{0.5em} % Some space after the list of bullet points
-  \\
+ \\
+ #5
+ \vspace{1ex} % Some space after subsubsections
 }
 
 \newenvironment{rProjectSubsubsection}[2]{ % 2 input arguments - project name, duration 
@@ -163,7 +163,7 @@
  #3
  \hspace*{2.5em}\textbf{Interesting problem solved or proud legacy:}
  #4
- \vspace{2ex} % Some space after subsubsections
+ \vspace{1ex} % Some space after subsubsections
 }
 
 \newenvironment{rHobbyProjectSubsection}[4]{ % 4 input arguments - project name, repo url, what you do, interesting problem solved
@@ -176,7 +176,7 @@
  #3
  \hspace*{2.5em}\textbf{Interesting problem solved:}
  #4
- \vspace{2ex} % Some space after subsubsections
+ \vspace{1.5ex} % Some space after subsubsections
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
