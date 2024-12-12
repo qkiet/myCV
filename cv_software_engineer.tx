@@ -1,0 +1,231 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rishi Shah
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[utf8]{vietnam}
+\usepackage{hyperref}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Phạm Quang Kiệt} % Your name
+\jobtitle {Software engineer}
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+\address{(+84)938803542 | qkiet97@gmail.com} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Summary}
+ A person who loves\textit{ researching complex topics, messing stuff up and creating new stuff}. With \textbf{5 years of experience}, always prepare to be unique and valuable contribution for team and organizations.
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{Work Experience}
+    \begin{rCompanySubsection}{Ban Vien Corporation}{07/2022 - 12/2024 (2.5 year)}{Senior Embedded Engineer}{}{
+        % Axon BWC project
+        \begin{rProjectSubsubsectionV2}{Axon Body Worn Camera (BWC) contractor}{04/2024 - 12/2024}{
+            \begin{itemize}
+                \item Implement end-to-end automation test for many features of Axon products
+                \item Improve and expand in-house automation test framework
+                \item Maintain Axon's complex application layer
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Fake RFID scan app to automate app-required TC thanks to browser developer tool
+                \item Implement entire MFA utility to framework to test MFA feature thanks to browser developer tool
+                \item Implement new command option to capture what text fields and values LCD is currently display.
+                \item Fix a unit test that passed in local environment but failed when run in Jenkins environment
+                \item Fix a complex issues that involves a lot of processes and happens occasionally.
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
+        % BV in-house In-vehicle Infotainment project
+        \begin{rProjectSubsubsectionV2}{Automative Android In-vehicle Infotainment}{12/2023 - 03/2024 (4 months)}{
+            \begin{itemize}
+                \item Develop Android App to stream videos produced by ADAS ECU to head Unit
+                \item Investigate and customize in-house Android Open Source Project (AOSP) codebase
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Able to put the Android streaming video app into launcher (home page) of Android
+                \item Make documentation about various difficult topics like build system, port library, VHAL...
+                \item Port 3rd party library OpenDDS to AOSP, which does not exist in AOSP.
+                \item Make a POC digital cluster app, whose data is connected to a VHAL back-end service
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
+        % ION Mobility project
+        \begin{rProjectSubsubsectionV2}{ION Mobility}{04/2023 - 11/2023 (7 months)}{
+            \begin{itemize}
+                \item Support implementing AUTOSAR various module like DET and DEM
+                \item Develop additional features for electric bike's ECUs
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Fix an UART buffer overflow bug
+                \item Develop a unique WiFi solution for ECU which only has an external Wi-Fi module ESP32.
+                \item Develop Wifi Manager module to manage Wi-Fi connection
+                \item Develop MQTT module that manage MQTT connection, publish/receive data and support various low-level transport
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
+        % RVC UKV
+        \begin{rProjectSubsubsectionV2}{RVC Upstream Kernel Verification}{01/2023 - 03/2023 (3 months)} {
+            \begin{itemize}
+                \item Report changes of maintained drivers of Reneas Design Vietnam Co,.Ltd (RVC) in mainline kernel
+                \item Perform regression test of maintained drivers on RCAR-H3 and RCAR-M3 boards
+                \item Record, attempt to fix and report any failutres of regression test
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Implement a custom build system that automatically fetch, patch, configure and build kernel
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
+        % BV in-house ADAS
+        \begin{rProjectSubsubsectionV2}{In-house ADAS}{11/2022 - 12/2022 (2 months)} {
+            \begin{itemize}
+                \item Support various features for proof-of-concept ADAS platform
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Integrate Wi-Fi AP service on Raspberry Pi POC, only using a Wi-Fi USB dongle
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+
+        \begin{rProjectSubsubsectionV2}{RVC Linux Kernel BSP}{08/2022 - 03/2022 (5 months)}
+        {
+            \begin{itemize}
+                \item Help the team fix Ethernet and PCIe-related bugs in Linux kernel for new RCAR-S4
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Fix issue that PCIe cannot operate in one of channel
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+    }
+    \end{rCompanySubsection}
+    \begin{rCompanySubsection}{Xelex Corporation}{01/2021 - 06/2022 (1.5 year)}{Firmware Engineer}{}{
+        \begin{rProjectSubsubsectionV2}{Build BIOS for new Window-powered tablet}{04/2024 - 12/2024}{
+            \begin{itemize}
+                \item Build BIOS and various firmware in order to bring up features of the tablet
+                \item Work closely with other team to make sure the design can meet its objective
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Bing up Intel Boot Guard feature, which is crucial for boot security
+                \item Bring up on-platform Trusted Platform Module for TPM depedent features
+                \item Bring up fingerprint thanks to configure ACPI tables
+                \item Find the approach to implement Intel Trusted Execution Technology, which is not well-documented
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+    }
+    \end{rCompanySubsection}
+
+    \begin{rCompanySubsection} {Xelex Corporation} {03/2020 - 12/2020 (9 months)}{Firmware Engineer Intern}{}{
+        \begin{rProjectSubsubsectionV2}{Build firmware for Smart PDU product}{04/2024 - 12/2024}{
+            \begin{itemize}
+                \item Design Smart PDU firmware architecture
+                \item Implement Smart PDU firmware to meet all defined features
+                \item Assign and monitor tasks of team member
+            \end{itemize}
+        }{
+            \begin{itemize}
+                \item Define a RTOS-based thread model to clarify data movement and thread roles
+                \item Define custom communication \& security protocol between multiple IoT devices
+            \end{itemize}
+        }
+        \end{rProjectSubsubsectionV2}
+    }
+    \end{rCompanySubsection}
+\end{rSection}
+\begin{rSection}{Education}
+{\bf University of Technology Ho Chi Minh City} \hfill {\em 08/2015 - 2021}
+\\ Electronics - Telecommunications Engineering\hfill { GPA: 7.33/10 }
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    Projects And Seminars
+%-----------------------------------------------------------------------------------------------
+
+\begin{rSection}{Hobby Projects}
+    \begin{rHobbyProjectSubsection}{Implement AES from scratch with Golang}{https://github.com/qkiet/go-aes}{
+        \begin{itemize}
+            \item A project that I made to understand how exactly AES works
+            \item Also the project that I want to learn Golang
+        \end{itemize}
+    } {
+        \begin{itemize}
+            \item Gather test data for hard-to-predict function like AES encrypt/decrypt or its inner operation
+        \end{itemize}
+    }
+    \end{rHobbyProjectSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	KEY SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Key Skills}
+\begin{itemize}
+    \item \textbf{Programming Language}: C, C++, Java, Kotlin, C\#, Python, Golang
+    \item \textbf{Compiler}: GCC, Clang, Golang
+    \item \textbf{Operating System}: FreeRTOS, Linux kernel, AOSP
+    \item \textbf{Frameworks}: EDK II, Slim bootloader, Yocto Project
+    \item \textbf{Build system:}: Makefile, CMake, Gradle
+    \item \textbf{Version Control System}: Git, SVN
+    \item \textbf{Repository Hosting Service}: Github, Gitlab
+    \item \textbf{Container, virtual machine}: Docker, VirtualBox
+    \item \textbf{CI/CD}: Jenkins, Gitlab
+    \item \textbf{Productivity}: Jira, Redmine
+    \item \textbf{Misc}: SSH, Shell scripting...
+\end{itemize}
+\end{rSection}
+\begin{rSection}{Language} \itemsep -3pt
+\item TOEIC \textbf{915/990}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\end{document}
